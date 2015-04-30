@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AKI - HTML5 Game Tutorial</title>
+        <link rel='stylesheet' href='style/style.css' />  
+    </head>
+    <body>
+        <canvas width='300' height='600'></canvas>
+
+        <script type='text/javascript'>
+            var canvas = document.getElementsByTagName( 'canvas' )[ 0 ];
+            var ctx = canvas.getContext( '2d' );
+            var W = 300, H = 600;
+            var BLOCK_W = W / COLS, BLOCK_H = H / ROWS;
+
+            // draw a single square at (x, y)
+            function drawBlock( x, y ) {
+                ctx.fillRect( BLOCK_W * x, BLOCK_H * y, BLOCK_W - 1 , BLOCK_H - 1 );
+                ctx.strokeRect( BLOCK_W * x, BLOCK_H * y, BLOCK_W - 1 , BLOCK_H - 1 );
+            }
+
+            
+
+
+        </script>
+
+
+    </body>
+</html>
